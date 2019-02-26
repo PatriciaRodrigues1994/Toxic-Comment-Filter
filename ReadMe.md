@@ -1,4 +1,4 @@
-OVERVIEW OF THE PROJECT :
+#OVERVIEW OF THE PROJECT :
     Toxic comments disrupt communities, drive users away, and strain moderation efforts. This Toxic Comments empowers moderators to prioritize toxic content for moderation in order to lower their negative impact on the community and decreases the reliance on users flagging comments.
     This filter can be used by various social media apps like Facebook, Instagram, Slack, Twitter, etc. so that they can encourage people to look for good things about themselves and their co-workers, resulting in higher levels of well-being. and at the same time inform the people of the injustice and negativity around the world in a healthy manner.
 
