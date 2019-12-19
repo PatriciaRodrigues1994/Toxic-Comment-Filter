@@ -13,13 +13,13 @@ This filter can be used by various social media apps like Facebook, Instagram, S
  ### What are toxic comments?
  
   Toxic comments are defined as having at least two of the following properties:   
-  Abuse: The main goal of the comment is to abuse or offend an individual or group of individuals.    
-  Trolling: The main goal of the comment is to garner a negative response.    
-  Lack of contribution: The comment does not actually contribute to the conversation.   
-  Reasonable reader property: Reading the comment would likely cause a reasonable person to leave a discussion thread.   
+  * Abuse: The main goal of the comment is to abuse or offend an individual or group of individuals.    
+  * Trolling: The main goal of the comment is to garner a negative response.    
+  * Lack of contribution: The comment does not actually contribute to the conversation.   
+  * Reasonable reader property: Reading the comment would likely cause a reasonable person to leave a discussion thread.   
 
 
-### MY APPROACH :    
+### Approach :    
 
    I have used a pretrained BERT for this classification tasks. The overall accuracy is 96.38%. I believe semantic understanding of the comments is very important for filtering out toxic comments and enabling healthy conversations.It found that inserting spaces and making typos reduced the toxicity score drastically. For example if someone introduced a word like ‘love’ in these sentences the score took a plunge.     
    
@@ -27,20 +27,20 @@ This filter can be used by various social media apps like Facebook, Instagram, S
 
 ### STEPS TO RUN THE PROJECT :
 1. Some general pytorch dependencies:    
-    `pip install pytorch==0.4.0`    
+    `pip install pytorch==0.4.0`      
 
 2. To train the classifer :    
-    You can change the configuration of the classifier using the global_config.yaml in config folder (Details of the configurations can be found in the init function of TrainClassifier).    
-   Download [dataset](https://drive.google.com/drive/folders/1zCz1aU1SrmBEc7Lzb2XZQ7g0hEnpxmgy?usp=sharing) and add it in the data folder   
-    You can train the classifier running the cells of Train_Filter jupyter notebook.   
-    First time loading may take time since it loads a pretrained model    
+    * You can change the configuration of the classifier using the global_config.yaml in config folder (Details of the configurations can be found in the init function of TrainClassifier).    
+   * Download [dataset](https://drive.google.com/drive/folders/1zCz1aU1SrmBEc7Lzb2XZQ7g0hEnpxmgy?usp=sharing) and add it in the data folder   
+   * You can train the classifier running the cells of Train_Filter jupyter notebook.   
+   * First time loading may take time since it loads a pretrained model    
     
     
     
 3. To run inference :
-    You can change the configuration of the classifier using the global_config.yaml in config folder (Details of the configurations can be found in the init function of Inference)      
-    Download [trained model](https://drive.google.com/drive/folders/1zCz1aU1SrmBEc7Lzb2XZQ7g0hEnpxmgy?usp=sharing) and add it in the model folder
-    You can train the classifier running the cells of Run_Prediction jupyter notebook.
+    * You can change the configuration of the classifier using the global_config.yaml in config folder (Details of the configurations can be found in the init function of Inference)      
+    * Download [trained model](https://drive.google.com/drive/folders/1zCz1aU1SrmBEc7Lzb2XZQ7g0hEnpxmgy?usp=sharing) and add it in the model folder
+    * You can train the classifier running the cells of Run_Prediction jupyter notebook.
     First time loading may take time since it loads a pretrained model
     
 ### QUICK RESULT :
